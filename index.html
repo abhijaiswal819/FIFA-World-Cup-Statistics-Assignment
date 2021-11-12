@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization - Homework 2</title>
+    <meta name="description" content="HW2">
+    <meta name="author" content="iLex">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="https://d3js.org/colorbrewer.v1.js"></script>
+    <script src="//d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="js/infoPanel.js" async></script>
+    <script src="js/script.js" async></script>
+    <script src="js/barChart.js" async></script
+</head>
+
+<body>
+
+<header>
+    <img src="assets/fifa_russia_logo.png" alt="Fifa WC Russia Logo" id="logo"/>
+    <h1>Exploring FIFA World Cup Statistics: Homework 2</h1>
+    <div>Name: ABHISHEK JAISWAL; E-Mail: abhij347.aj@gmail.com</div>
+</header>
+
+<div id="bar-chart" class="view">
+    <h2 class="">Bar Chart</h2>
+    <div id="plot-selector">
+        <label>Plot:</label>
+        <select id="dataset" onchange="chooseData()">
+            <option selected value="attendance">Attendance</option>
+            <option value="teams">Teams</option>
+            <option value="matches">Matches</option>
+            <option value="goals">Goals</option>
+        </select>
+    </div>
+
+    <svg width="500" height="400" id="barChart">
+        <g id="xAxis"></g>
+        <g id="yAxis"></g>
+        <g id="bars"></g>
+    </svg>
+</div>
+
+<script type="application/javascript" src="js/script.js"></script>
+</body>
+</html>
